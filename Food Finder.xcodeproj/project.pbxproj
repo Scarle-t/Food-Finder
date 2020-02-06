@@ -12,7 +12,37 @@
 		A60E857F2153E10D00A90790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60E857D2153E10D00A90790 /* Main.storyboard */; };
 		A60E85812153E10E00A90790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60E85802153E10E00A90790 /* Assets.xcassets */; };
 		A60E85842153E10E00A90790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60E85822153E10E00A90790 /* LaunchScreen.storyboard */; };
+		A60E858D215400EE00A90790 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A60E858C215400EE00A90790 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		A60E85902154016300A90790 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E858F2154016300A90790 /* SQLite.swift */; };
+		A6FD33FB215941EC003C8481 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD33FA215941EC003C8481 /* NotificationCenter.framework */; };
+		A6FD33FE215941EC003C8481 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD33FD215941EC003C8481 /* TodayViewController.swift */; };
+		A6FD3401215941EC003C8481 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD33FF215941EC003C8481 /* MainInterface.storyboard */; };
+		A6FD3405215941EC003C8481 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A6FD33F9215941EC003C8481 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6FD3403215941EC003C8481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60E856E2153E10D00A90790 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FD33F8215941EC003C8481;
+			remoteInfo = widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6FD3409215941EC003C8481 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A6FD3405215941EC003C8481 /* widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A60E85762153E10D00A90790 /* Food Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +52,15 @@
 		A60E85802153E10E00A90790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60E85832153E10E00A90790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60E85852153E10E00A90790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60E858C215400EE00A90790 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A60E858E2154012600A90790 /* sqlite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sqlite.h; sourceTree = "<group>"; };
+		A60E858F2154016300A90790 /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		A6FD33F42159412F003C8481 /* Food Finder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Food Finder.entitlements"; sourceTree = "<group>"; };
+		A6FD33F9215941EC003C8481 /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FD33FA215941EC003C8481 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A6FD33FD215941EC003C8481 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A6FD3400215941EC003C8481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A6FD3402215941EC003C8481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +68,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60E858D215400EE00A90790 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD33F6215941EC003C8481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD33FB215941EC003C8481 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				A60E85782153E10D00A90790 /* Food Finder */,
+				A6FD33FC215941EC003C8481 /* widget */,
 				A60E85772153E10D00A90790 /* Products */,
+				A60E858B215400EE00A90790 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				A60E85762153E10D00A90790 /* Food Finder.app */,
+				A6FD33F9215941EC003C8481 /* widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +105,36 @@
 		A60E85782153E10D00A90790 /* Food Finder */ = {
 			isa = PBXGroup;
 			children = (
+				A6FD33F42159412F003C8481 /* Food Finder.entitlements */,
 				A60E85792153E10D00A90790 /* AppDelegate.swift */,
 				A60E857B2153E10D00A90790 /* ViewController.swift */,
 				A60E857D2153E10D00A90790 /* Main.storyboard */,
 				A60E85802153E10E00A90790 /* Assets.xcassets */,
 				A60E85822153E10E00A90790 /* LaunchScreen.storyboard */,
 				A60E85852153E10E00A90790 /* Info.plist */,
+				A60E858E2154012600A90790 /* sqlite.h */,
+				A60E858F2154016300A90790 /* SQLite.swift */,
 			);
 			path = "Food Finder";
+			sourceTree = "<group>";
+		};
+		A60E858B215400EE00A90790 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A60E858C215400EE00A90790 /* libsqlite3.tbd */,
+				A6FD33FA215941EC003C8481 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6FD33FC215941EC003C8481 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD33FD215941EC003C8481 /* TodayViewController.swift */,
+				A6FD33FF215941EC003C8481 /* MainInterface.storyboard */,
+				A6FD3402215941EC003C8481 /* Info.plist */,
+			);
+			path = widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +147,34 @@
 				A60E85722153E10D00A90790 /* Sources */,
 				A60E85732153E10D00A90790 /* Frameworks */,
 				A60E85742153E10D00A90790 /* Resources */,
+				A6FD3409215941EC003C8481 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A6FD3404215941EC003C8481 /* PBXTargetDependency */,
 			);
 			name = "Food Finder";
 			productName = "Food Finder";
 			productReference = A60E85762153E10D00A90790 /* Food Finder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A6FD33F8215941EC003C8481 /* widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FD3406215941EC003C8481 /* Build configuration list for PBXNativeTarget "widget" */;
+			buildPhases = (
+				A6FD33F5215941EC003C8481 /* Sources */,
+				A6FD33F6215941EC003C8481 /* Frameworks */,
+				A6FD33F7215941EC003C8481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widget;
+			productName = widget;
+			productReference = A6FD33F9215941EC003C8481 /* widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +187,14 @@
 				ORGANIZATIONNAME = Scarlet;
 				TargetAttributes = {
 					A60E85752153E10D00A90790 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A6FD33F8215941EC003C8481 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -113,6 +213,7 @@
 			projectRoot = "";
 			targets = (
 				A60E85752153E10D00A90790 /* Food Finder */,
+				A6FD33F8215941EC003C8481 /* widget */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +229,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6FD33F7215941EC003C8481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD3401215941EC003C8481 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,12 +244,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60E85902154016300A90790 /* SQLite.swift in Sources */,
 				A60E857C2153E10D00A90790 /* ViewController.swift in Sources */,
 				A60E857A2153E10D00A90790 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6FD33F5215941EC003C8481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD33FE215941EC003C8481 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6FD3404215941EC003C8481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FD33F8215941EC003C8481 /* widget */;
+			targetProxy = A6FD3403215941EC003C8481 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A60E857D2153E10D00A90790 /* Main.storyboard */ = {
@@ -157,6 +283,14 @@
 				A60E85832153E10E00A90790 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A6FD33FF215941EC003C8481 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FD3400215941EC003C8481 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,7 +415,10 @@
 		A60E85892153E10E00A90790 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Food Finder/Food Finder.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WC44F9Y8F;
 				INFOPLIST_FILE = "Food Finder/Info.plist";
@@ -291,6 +428,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.scarletsc.Food-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Food Finder/sqlite.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +438,10 @@
 		A60E858A2153E10E00A90790 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Food Finder/Food Finder.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WC44F9Y8F;
 				INFOPLIST_FILE = "Food Finder/Info.plist";
@@ -309,6 +451,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.scarletsc.Food-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Food Finder/sqlite.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6FD3407215941EC003C8481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WC44F9Y8F;
+				INFOPLIST_FILE = widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.scarletsc.Food-Finder.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6FD3408215941EC003C8481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WC44F9Y8F;
+				INFOPLIST_FILE = widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.scarletsc.Food-Finder.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +515,15 @@
 			buildConfigurations = (
 				A60E85892153E10E00A90790 /* Debug */,
 				A60E858A2153E10E00A90790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FD3406215941EC003C8481 /* Build configuration list for PBXNativeTarget "widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FD3407215941EC003C8481 /* Debug */,
+				A6FD3408215941EC003C8481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
